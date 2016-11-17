@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ block.super }}
+{% endblock styles %}
+
+{% block title %}
+{{ object.shortcode }} | {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+<div class=''>
+
+    <h1>Success!</h1>
+
+    <p> {{ object.url }} </p>
+
+    <a class='btn btn-link' href={{ object.get_short_url }}> {{ object.get_short_url }} </a>
+    <br>
+    <a class='btn btn-default' href='/'>New <span class="glyphicon glyphicon-plus" aria-hidden="true"></a>
+</div>
+{% endblock content %}

@@ -1,0 +1,10 @@
+trydjango-110.sublime-project
+pip-selfcheck.json
+trydjango-110.sublime-workspace
+bin/
+lib/
+include/
+*.pyc
+__pycache__/
+src/db.sqlite3
+.DS_Store
